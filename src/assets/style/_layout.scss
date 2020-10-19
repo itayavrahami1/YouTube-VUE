@@ -1,3 +1,16 @@
+.main-container {
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+
+    > * {
+        grid-column: 2;
+
+        &.full {
+            grid-column: 1 /-1;
+        }
+    }
+}
+
 body {
     background-color: lightsteelblue;
 }
